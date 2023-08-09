@@ -2,29 +2,6 @@ timotei crackme#6
 
 source: https://crackmes.one/crackme/6452ba5533c5d43938912e35
 
-timotei.crackme#6.exe
-
-initial impressions:
-command line program
-no gui
-probably intakes a file
-
-
-read in 80 bytes from timotei.crackme#6.enjoy!
-file buffer neets to be 13 bytes long
-
-add first 4 bytes to sum
-subtract next 4 bytes from sum
-add next 4 bytes to sum
-
-must be bigger than 12345678
-
-last digit must be the low byte of summation in EDX
-11th digit must be 6
-
-keyfile:
-1234567890625
-
 # Initial impressions
 Before analyzing the file, we can get a rough idea of what the program does just by running it.
 
