@@ -37,7 +37,7 @@ After clearing up some registers, we subtract `0xD` (13) from the number of byte
 
 Let's focus on `.text:00401056-B`. It appears we are loading some data from `EAX` (which is holding the `inputBuffer`), and adding and subtracting specific parts of it. It's important to remember that our array exists as a contiguous stream of bytes in our `.data` section, and as we can see with `[eax]`, `[eax+4]`, and `[eax+8]`, we are accessing an `EAX`-worth of data at a time: one `dword`, or four bytes. As our characters are all each one byte (assuming we are using ASCII or basic UTF-8 glyphs), this means the first `add` is adding the first four bytes at once. However, they may not be added in the way you think they are. Let's take a look at this in `x32dbg`.
 
-# x32dbg
+# Dynamic Analysis
 
 We'll go ahead and jump to this `add` instruction on `00401056`. First, let's follow `[eax]` in the dump.
 
