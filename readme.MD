@@ -77,4 +77,4 @@ ___
 
 *If you're wondering why we're able to just replace this character without effecting the summation function that happens before the individual digit checks, it's because the result is large enough that changing the second `1` won't result in it being lower than 12345678. If the 'encryption' were more robust, this almost certainly would not be the case.*
 
-*Additionally, we're able to freely replace the last digit without worrying about effecting the summation function as the 13th digit isn't included. Only the first three `dword`s, or 12 bytes, are used for the calculation.
+*Additionally, we're able to freely replace the last digit without worrying about effecting the summation function as the 13th digit isn't included. Only the first three `dword`s, or 12 bytes, are used for the calculation.*
